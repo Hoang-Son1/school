@@ -1,5 +1,5 @@
 function logo(){
-    location.href ='#body'
+    location.href ='index.html'
 }
 function login(){
     location.href ='login.html'

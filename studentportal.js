@@ -1,14 +1,5 @@
-// function k(){
-//     var x = document.getElementById("language")
-//     if (x.style.display == "none"){
-        
-//     }
-//     else{
-//     location.href ='entertainment.html'
-//     }
-// }
 function logo(){
-    location.href ='#body'
+    location.href ='index.html'
 }
 function login(){
      location.href ='login.html'
