@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="image/nav/sefton logo.png">
+    <script>
+        window.addEventListener("load", function() {
+        const form = document.getElementById('formlogin1');
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+            const data = new FormData(form);
+            const action = e.target.action;
+            fetch(action, {
+            method: 'POST',
+            body: data,
+            })
+            .then(() => {
+                location.href ='studentportal.html'
+            })
+        });
+        });
+        window.addEventListener("load", function() {
+        const form = document.getElementById('formlogin2');
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+            const data = new FormData(form);
+            const action = e.target.action;
+            fetch(action, {
+            method: 'POST',
+            body: data,
+            })
+            .then(() => {
+                location.href ='parentportal.html'
+            })
+        });
+        });
+        window.addEventListener("load", function() {
+        const form = document.getElementById('formlogin3');
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+            const data = new FormData(form);
+            const action = e.target.action;
+            fetch(action, {
+            method: 'POST',
+            body: data,
+            })
+            .then(() => {
+                location.href ='teacherportal.html'
+            })
+        });
+        });
+        function login1(){
+            var x = document.getElementById("login1");
+            var y = document.getElementById("button1");
+            var z = document.getElementById("button2");
+            var a = document.getElementById("button3");
+            var b = document.getElementById("type");
+            var s = document.getElementById("blur");
+            if (x.style.display == "flex"){
+                x.style.display = "none";
+            } else{
+                x.style.display = "flex";
+                y.style.display = "none";
+                z.style.display = "none";
+                a.style.display = "none";
+                b.style.display = "none";
+                s.style.display = "flex";
+            }
+        }
+        function login2(){
+            var x = document.getElementById("login2");
+            var y = document.getElementById("button1");
+            var z = document.getElementById("button2");
+            var a = document.getElementById("button3");
+            var b = document.getElementById("type");
+            var s = document.getElementById("blur");
+            if (x.style.display == "flex"){
+                x.style.display = "none";
+            } else{
+                x.style.display = "flex";
+                y.style.display = "none";
+                z.style.display = "none";
+                a.style.display = "none";
+                b.style.display = "none";
+                s.style.display = "flex";
+            }
+        }
+        function login3(){
+            var x = document.getElementById("login3");
+            var y = document.getElementById("button1");
+            var z = document.getElementById("button2");
+            var a = document.getElementById("button3");
+            var b = document.getElementById("type");
+            var s = document.getElementById("blur");
+            if (x.style.display == "flex"){
+                x.style.display = "none";
+            } else{
+                x.style.display = "flex";
+                y.style.display = "none";
+                z.style.display = "none";
+                a.style.display = "none";
+                b.style.display = "none";
+                s.style.display = "flex";
+            }
+        }
+        function ql(){
+            var a = document.getElementById("login1");
+            var b = document.getElementById("login2");
+            var c = document.getElementById("login3");
+            var d = document.getElementById("type");
+            var s = document.getElementById("blur");
+            var x = document.getElementById("button1");
+            var y= document.getElementById("button2");
+            var z = document.getElementById("button3");
+                a.style.display = "none";
+                b.style.display = "none";
+                c.style.display = "none";
+                d.style.display = "flex";
+                s.style.display = "none";
+                x.style.display = "flex";
+                y.style.display = "flex";
+                z.style.display = "flex";
+            }
+        function form1() {
+        document.getElementById("button4").disabled = true;
+            document.querySelector("#loader").style.display = "block";
+            document.getElementById("blur").style.filter = "blur(10px)";
+            document.getElementById("blur").style.backdropFilter = "blur(10px)";
+            document.getElementById("blur").style.webkitfilter = "blur(10px)";
+            document.getElementById("blur").style.webkitbackdropFilter = "blur(10px)";
+            document.getElementById("body").style.userSelect = "none";
+        }
+</script>
+</head>
+<body>
+    <div id="loader" class="center"></div>
+    <div id="blur">
+    <div id="login1" class="login1">
+        <button onclick="ql()"><</button> <br>
+        <form onsubmit="form1()" id="formlogin1" action="https://script.google.com/macros/s/AKfycbz8pAwFyw2eowEbF6Irv0iBNd84KZBKz9jN3QVwa6wdnKN1RKp49TDbMLqkQdFkjoIx/exec" method="post" autocomplete="off">
+            <input class="input" name="Email" type="email" placeholder="Email" required>
+            <input class="input" name="Password" type="password" placeholder="Password" required>
+            <input id="button4" class="submit" type="submit" value="Login as student"/>
+        </form>
+    </div>
+    <div id="login2" class="login1">
+        <button onclick="ql()"><</button> <br>
+        <form onsubmit="form1()" id="formlogin2" action="https://script.google.com/macros/s/AKfycbz8pAwFyw2eowEbF6Irv0iBNd84KZBKz9jN3QVwa6wdnKN1RKp49TDbMLqkQdFkjoIx/exec" method="post" autocomplete="off">
+            <input class="input" name="Email" type="email" placeholder="Email" required>
+            <input class="input" name="Password" type="password" placeholder="Password" required>
+            <input id="button4" class="submit" type="submit" value="Login as parent"/>
+        </form>
+    </div>
+    <div id="login3" class="login1">
+        <button onclick="ql()"><</button> <br>
+        <form onsubmit="form1()" id="formlogin3" action="https://script.google.com/macros/s/AKfycbz8pAwFyw2eowEbF6Irv0iBNd84KZBKz9jN3QVwa6wdnKN1RKp49TDbMLqkQdFkjoIx/exec" method="post" autocomplete="off">
+            <input class="input" name="Email" type="email" placeholder="Email" required>
+            <input class="input" name="Password" type="password" placeholder="Password" required>
+            <input id="button4" class="submit" type="submit" value="Login as teacher"/>
+        </form>
+    </div>
+    </div>
+    <div id="type" class="type">
+    <div class="button">
+        <input onclick="login1()" id="button1" class="submit" type="submit" value="Login as student"/>
+        <input onclick="login2()" id="button2" class="submit" type="submit" value="Login as parent"/>
+        <input onclick="login3()" id="button3" class="submit" type="submit" value="Login as teacher"/>
+    </div>
+</div>
+</body>
+</html>

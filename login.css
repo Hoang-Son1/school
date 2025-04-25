@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: darkblue;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: normal;
+    scroll-behavior: smooth;
+    font-size: 1.75vmin;
+    color: white;
+}
+@media screen and (max-width: 600px){
+    html, body{
+        font-size: 2.5vmin;
+    }
+}
+@media screen and (max-height: 600px){
+    html, body{
+        font-size: 1.75vmax;
+    }
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login1{
+    height: fit-content;
+    width: 60%;
+    position: absolute;
+    padding: 5%;
+    font-size: 1.25em;
+    border-radius: 25px;
+}
+#login1, #login2, #login3{
+    display: none;
+    flex-direction: column;
+}
+form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    align-items: center;
+}
+input{
+    border-radius: 15px;
+    font-size: 1.25em;
+    padding: 1em;
+    width: 80%;
+}
+.button{
+    height: fit-content;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 5%;
+    font-size: 0.75em;
+    line-height: 0.8em;
+    row-gap: 2vh;
+    column-gap: 10%;
+}
+#button1, #button2, #button3, #button4{
+    width: fit-content;
+    min-width: 150px;
+    transition: transform 0.25s;
+    padding: 3% 5%;
+}
+#button1:hover, #button2:hover, #button3:hover, #button4:hover, #button5:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+}
+.type{
+    height: fit-content;
+    width: 80%;
+    padding: 5%;
+    font-size: 1.25em;
+    border-radius: 25px;
+}
+button{
+    height: 3em;
+    width: 3em;
+    border-radius: 50px;
+    font-size: 1em;
+    transition: transform 0.25s;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+}
+#loader {
+    border: 12px solid #FFA500;
+    border-radius: 50%;
+    border-top: 12px solid white;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+    display: none;
+    z-index: 3;
+    /* display: block; */
+}
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.center {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#blur{
+    display: none;
+    height: 100%;
+    width: 100%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
