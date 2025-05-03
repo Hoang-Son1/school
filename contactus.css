@@ -118,24 +118,28 @@ nav{
     padding: 0% 2%;
     border-radius: 15px;
 }
-#nav8{
+#nav9{
     background-color: rgb(174, 174, 174);
     -webkit-box-shadow: 5px 5px 15px 5px #000000; 
     box-shadow: 5px 5px 15px 5px #000000;
 }
-#nav2:hover ~ #nav8{
+#nav2:hover ~ #nav9{
     box-shadow: none;
     background-color: white;
 }
-#nav3:hover ~ #nav8{
+#nav3:hover ~ #nav9{
     box-shadow: none;
     background-color: white;
 }
-#nav4:hover ~ #nav8{
+#nav4:hover ~ #nav9{
     box-shadow: none;
     background-color: white;
 }
-#nav5:hover ~ #nav8{
+#nav5:hover ~ #nav9{
+    box-shadow: none;
+    background-color: white;
+}
+#nav8:hover + #nav9{
     box-shadow: none;
     background-color: white;
 }

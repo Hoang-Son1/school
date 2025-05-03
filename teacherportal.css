@@ -661,10 +661,15 @@ nav a{
     opacity: 100%;
     box-sizing: border-box;
     z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
     border-radius: 25px;
     word-break: break-word;
     hyphens: auto!important;
-    position: fixed;
     border: 5px solid black;
     display: none;
     animation: appear 0.5s;
